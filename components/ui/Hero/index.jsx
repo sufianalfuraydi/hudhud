@@ -30,7 +30,7 @@ const Hero = () => {
         });
 
         const headers = {
-            'Authorization': `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`, // Replace with your API key
+            'Authorization': `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`, // Replace with your API key
             'Content-Type': 'application/json'
         };        
 
