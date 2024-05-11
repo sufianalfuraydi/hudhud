@@ -18,7 +18,7 @@ const Footer = () => (
                     </Link>
                     <h2 className="text-gray-800 text-lg font-semibold sm:text-2xl">Websites optimization tool</h2>
                     <p className="max-w-md">
-                        We help companies around the world to get the best strategies to improve their marketing.
+                        We help companies around the world to get the best Info to grow rapidly.
                     </p>
                     <div className="pt-2 flex items-center gap-x-6 text-gray-400">
                         <a href="/" target="_blank" aria-label="Social media">
@@ -46,7 +46,7 @@ const Footer = () => (
                         ))
                     }
                 </ul>
-                <p className="mt-6 sm:mt-0">© 2023 Split Inc. All rights reserved.</p>
+                <p className="mt-6 sm:mt-0">© 2024 hudhud Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>

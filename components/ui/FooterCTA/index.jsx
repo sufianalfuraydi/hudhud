@@ -10,7 +10,7 @@ const FooterCTA = () => {
                         Grow up your online business with few steps
                     </h2>
                     <p className="mt-3 text-gray-300">
-                        we can help you grow your online business quickly using the best tools in the market.
+                        we can help you grow your online business quickly using the best info in the market.
                     </p>
                 </div>
                 <div className="flex-none mt-4 md:mt-0">

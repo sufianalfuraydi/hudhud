@@ -3,7 +3,7 @@ import Image from "next/image"
 const Brand = ({ ...props }) => (
     <Image
         src="/split.svg"
-        alt="Split logo"
+        alt="hudhud"
         {...props}
         width={152}
         height={96}
