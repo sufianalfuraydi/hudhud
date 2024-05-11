@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import GradientWrapper from "../../GradientWrapper";
 import Button from "../Button";
-import { Lottie } from 'lottie-react';
 import loaderAnimation from '/public/loader.json'; // Ensure the path to your loader JSON is correct
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const Hero = () => {
     const [inputText, setInputText] = useState('');
@@ -64,32 +66,27 @@ const Hero = () => {
         }
     };
 
-    // Function to extract competitors from the response content
     const extractCompetitors = (content) => {
-        const sections = content.split("\n### ").slice(1); // Skip the introduction
+        const sections = content.split("\n### ").slice(1);
         const competitors = sections.map(section => {
             const [nameLine, ...detailsLines] = section.split("\n");
             const name = nameLine.trim();
             let details = detailsLines.join("\n").trim();
 
-            // Extract and clean website URL if available
             const websiteMatch = details.match(/https?:\/\/[^\s\)]+/g);
             const website = websiteMatch ? cleanURL(websiteMatch[0]) : null;
 
-            // Clean URL and remove redundant information
             if (website) {
                 const websiteRegex = new RegExp(`\\bhttps?:\/\/[^\s\)]+\\b`, 'g');
                 details = details.replace(websiteRegex, '').replace(/\[.*?\]\s*\([^)]*\)/g, '').trim();
-                details = details.replace(/Website:.*?\n/, '').trim(); // Remove "Website" label
+                details = details.replace(/Website:.*?\n/, '').trim();
             }
 
-            // Extract SWOT sections
             const strengths = extractSection(details, 'Strengths');
             const weaknesses = extractSection(details, 'Weaknesses');
             const opportunities = extractSection(details, 'Opportunities');
             const threats = extractSection(details, 'Threats');
 
-            // Remove extracted SWOT sections from details
             details = details.replace(/Strengths:.*?(\n|$)/g, '').trim();
             details = details.replace(/Weaknesses:.*?(\n|$)/g, '').trim();
             details = details.replace(/Opportunities:.*?(\n|$)/g, '').trim();
@@ -109,12 +106,10 @@ const Hero = () => {
         return competitors.filter(competitor => competitor.name && competitor.details);
     };
 
-    // Function to clean URLs
     const cleanURL = (url) => {
-        return url.replace(/[)\]]/g, ''); // Remove any trailing parenthesis or square brackets
+        return url.replace(/[)\]]/g, '');
     };
 
-    // Function to extract specific sections from details
     const extractSection = (details, section) => {
         const regex = new RegExp(`${section}:\\s*(.*?)(\\n|$)`, 'i');
         const match = details.match(regex);
