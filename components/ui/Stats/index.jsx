@@ -6,16 +6,16 @@ const stats = [
         desc: "Active websites around the world."
     },
     {
-        data: "120M+",
-        desc: "API requests per day, and 6,000 requests a second."
+        data: "150M",
+        desc: "Startups around the world"
     },
     {
-        data: "25B+",
-        desc: "Tracked pageviews per month."
+        data: "11B+",
+        desc: " spend per month."
     },
     {
         data: "70%",
-        desc: "most people are using split in their website."
+        desc: "most people are using Hudhud in their startups."
     },
 ]
 
@@ -24,7 +24,7 @@ const Stats = () => (
         <div className="custom-screen text-gray-600">
             <div className="max-w-xl xl:mx-auto xl:text-center">
                 <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                    Get your site to the top of Google
+                    Get your busines to the top of market
                 </h3>
                 <p className="mt-3">
                     We distribute your visitors to your site across different geographical locations.

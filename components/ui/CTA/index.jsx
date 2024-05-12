@@ -9,10 +9,10 @@ const CTA = () => {
             <div className="custom-screen flex flex-col-reverse gap-x-12 justify-between md:flex-row md:items-center">
                 <div className="flex-none max-w-xl mt-12 space-y-3 md:mt-0">
                     <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Simple, powerful ways to increase website users
+                        Simple, powerful ways to increase business Customers
                     </h2>
                     <p className="text-gray-600">
-                        Split is a new, revolutionary & cost-effective way to grow your website's traffic. It's a super-simple, one-time fee that will make your site rank higher on Google and bring in more visitors. We're so confident, we offer a 100% money back guarantee.
+                        Hudhud is a new, revolutionary & cost-effective way to grow your business. It's a super-simple, one-time fee that will make your site rank higher . We're so confident.
                     </p>
                     <div className="pt-1">
                         <NavLink

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import dynamic from 'next/dynamic';
 import GradientWrapper from "../../GradientWrapper";
 import Button from "../Button";
-import loaderAnimation from '/public/loader.json'; // Ensure the path to your loader JSON is correct
+import loaderAnimation from '/public/loader.json'; 
 
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 

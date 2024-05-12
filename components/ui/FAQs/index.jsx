@@ -2,37 +2,30 @@ import SectionWrapper from "../../SectionWrapper";
 
 const faqsList = [
     {
-        q: "How does website traffic affect my business?",
-        a: "Website traffic is the number of visitors to a website or webpage. It is usually measured in hits, unique visitors, page views.",
+        q: "How does analysis effect my business?",
+        a: "It will give you comphernive data about your comptitors",
     },
     {
-        q: "What are the advantages of using a free traffic service at the beginning?",
-        a: "For starters, it is free. It does not cost anything to use the service unlike other paid services that require you to pay.",
+        q: "What are the advantages of using a premium plan?",
+        a: "For starters, it will be fit by give you all you want",
     },
     {
-        q: "Which types of paid traffic services are available?",
-        a: "There are many different types of paid traffic services, such as pay-per-click advertising, social media ads, and email marketing.",
+        q: "Which types of paid Gold services are available?",
+        a: "or now,just the SWOT analysis near will launch the new ",
     },
     {
-        q: "How do you generate traffic to a website?",
-        a: "Social media is a great place for businesses because it has the potential to reach millions of people, so we can help to you do that.",
+        q: "How do you generate the info?",
+        a: "By using our fine tuninge GPT-4",
     },
     {
-        q: "How can Website traffic service help me?",
-        a: "There are many benefits to using a website traffic service. For example, they can help you get more targeted visitors to your site.",
+        q: "How can Hudhud service help me?",
+        a: "There are many benefits to using a Hudhu service. For example, they can help you get more targeted Comptitors.",
     },
     {
-        q: "Which are the best Website traffic service providers in the market?",
-        a: "There are a lot of Website traffic service providers in the market, but split is one of the best, and trusted websites in the market",
+        q: "Which are the best Comptitor analysis service providers in the market?",
+        a: "There are a lot of Comptitor analysis service providers in the market, but Hudhud is one of the best, and trusted websites in the market",
     },
-    {
-        q: "How do you generate traffic to a website?",
-        a: "Social media is a great place for businesses because it has the potential to reach millions of people, so we can help to you do that.",
-    },
-    {
-        q: "How can Website traffic service help me?",
-        a: "There are many benefits to using a website traffic service. For example, they can help you get more targeted visitors to your site.",
-    }
+    
 ]
 
 const FAQs = () => (
@@ -46,7 +39,7 @@ const FAQs = () => (
                     Everything you need to know about the product. Can’t find the answer you’re looking for? feel free to {" "}
                     <a
                         className='text-blue-600 hover:text-blue-400 duration-150 font-semibold whitespace-nowrap'
-                        href='mailto:example@domain.com'>
+                        href='mailto:sufian112001@gmail.com.com'>
                         contact us
                     </a>.
                 </p>

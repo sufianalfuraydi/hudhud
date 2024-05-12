@@ -11,7 +11,7 @@ const Navbar = () => {
     const navigation = [
         { name: "Features", href: "#features" },
         { name: "Pricing", href: "/pricing" },
-       
+         { name: "FAQs", href: "#faqs" },
     ]
 
     useEffect(() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
                                 navigation.map((item, idx) => {
                                     return (
                                         <li key={idx} className="hover:text-gray-900">
-                                            <Link href={item.href} className="block" scroll={false}>
+                                            <Link href={item.href} className="block text-lg" scroll={false}>
                                                 {item.name}
                                             </Link>
                                         </li>
