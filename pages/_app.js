@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Hudhud</title>
         <meta
-          name='description'
+          name='Hudhud'
           content='The ultimate way to get more website traffic and grow your online business.'
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
